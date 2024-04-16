@@ -160,7 +160,7 @@ output application/json
         </ee:transform>
     </flow>
     <flow name="get:\get-employee:emp-sapi-april2-config">
-        <logger level="INFO" doc:name="Logger" doc:id="09b8a68f-89d3-42cf-836b-dd9f36fe2107" message="Start logger for get employee"/>
+        <logger level="INFO" doc:name="Logger" doc:id="09b8a68f-89d3-42cf-836b-dd9f36fe2107" message="Start logger - get employee"/>
 		<ee:transform doc:name="Transform Message">
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0
@@ -175,7 +175,7 @@ output application/json
         </ee:transform>
     </flow>
     <flow name="post:\create-employee:application\json:emp-sapi-april2-config">
-        <logger level="INFO" doc:name="Logger" doc:id="833408d5-0d73-41a6-b9f2-deaa11c84f9c" message="Start logger for the post method"/>
+        <logger level="INFO" doc:name="Logger" doc:id="833408d5-0d73-41a6-b9f2-deaa11c84f9c" message="Start logger - post method"/>
 		<ee:transform doc:name="Transform Message">
             <ee:message>
                 <ee:set-payload><![CDATA[%dw 2.0
